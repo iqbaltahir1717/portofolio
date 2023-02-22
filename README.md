@@ -1,9 +1,7 @@
-# coreigniter
-Base website core-system using CodeIgniter Framework - Research Purpose
+# PortofolioWeb
 
----------------------------------------------------------------------------
-Credit by Techno's Studio<br>
-URL         : http://technos-studio.com <br>
-Email       : technos.studio@gmail.com <br>
-Location    : Kendari, Sulawesi Tenggara 
+---
 
+URL : http://iqbaltahir33.com <br>
+Email : iqbalblackphantom33@gmail.com <br>
+Location : Indonesian
