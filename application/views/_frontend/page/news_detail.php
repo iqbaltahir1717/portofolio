@@ -9,29 +9,17 @@
 </section>
 
 <main id="main">
-
     <section id="services" class="services">
-
         <div class="container" data-aos="fade-up">
-
             <section id="blog" class="blog">
-
                 <div class="container" data-aos="fade-up">
-
                     <div class="row">
-
                         <div class="col-lg-12 entries-2">
-
                             <?php foreach ($news as $n) { ?>
-
                                 <article class="entry-3">
-
                                     <div class="entry-img">
-
                                         <img src="<?php echo base_url(); ?>upload/news/<?php echo $n->news_cover; ?>" alt="" class="img-fluid img-thumbnail">
-
                                     </div>
-
                                     <br>
 
                                     <div class="entry-value">
