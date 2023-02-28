@@ -23,10 +23,8 @@
 
 
 body {
-
     font-family: "Open Sans", sans-serif;
-
-    color: #444444;
+    color: #A7A7A7;
 
 }
 
@@ -62,7 +60,7 @@ h5,
 
 h6 {
 
-    font-family: "Raleway", sans-serif;
+    /* font-family: "Raleway", sans-serif; */
 
 }
 
@@ -79,50 +77,32 @@ h6 {
 
 
 .back-to-top {
-
     position: fixed;
-
     display: none;
-
     right: 15px;
-
     bottom: 15px;
-
     z-index: 99999;
-
 }
 
 
 
 .back-to-top i {
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     font-size: 20px;
-
     width: 40px;
-
     height: 40px;
-
-    border-radius: 50px;
-
-    background: #0880e8;
-
+    background: #e48fce;
     color: #fff;
-
     transition: all 0.4s;
-
 }
 
 
 
 .back-to-top i:hover {
 
-    background: #ffc412;
+    background: #80CDFF;
 
     color: #fff;
 
@@ -750,7 +730,7 @@ h6 {
 
     overflow-y: auto;
 
-    background: #fff;
+    background: #202124;
 
     transition: ease-in-out 0.2s;
 
@@ -784,11 +764,11 @@ h6 {
 
     position: relative;
 
-    color: #0665b7;
+    color: #ffff;
 
     padding: 10px 20px;
 
-    font-weight: 500;
+    /* font-weight: 500; */
 
     outline: none;
 
@@ -874,7 +854,7 @@ h6 {
 
     position: fixed;
 
-    background: rgba(5, 74, 133, 0.6);
+    /* background: rgba(5, 74, 133, 0.6); */
 
     overflow: hidden;
 
@@ -3395,10 +3375,9 @@ section {
 .breadcrumbs {
 
     padding: 15px 0;
-
     background: #ecf6fe;
 
-    margin-top: 70px;
+    /* margin-top: 70px; */
 
 }
 
@@ -3667,7 +3646,7 @@ section {
 
 
 .blog .entry .entry-img {
-    max-height: 400px;
+    max-height: 172px;
     /* margin: -20px -20px 20px -20px; */
     overflow: hidden;
 }
@@ -4386,13 +4365,7 @@ section {
 
 
 .blog .sidebar {
-
     z-index: 9999;
-
-    padding: 60px;
-
-    box-shadow: 48px 48px 96px rgba(233, 233, 233, 0.06), -48px -48px 96px rgba(0, 0, 0, 0.25);
-
 }
 
 
@@ -4416,9 +4389,7 @@ section {
 
 
 .blog .sidebar .sidebar-item {
-
     margin-bottom: 30px;
-
 }
 
 
@@ -4433,7 +4404,7 @@ section {
 
     position: relative;
 
-    border-radius: 50px;
+    /* border-radius: 50px; */
 
 }
 
@@ -4512,7 +4483,7 @@ section {
 .blog .sidebar .categories ul a {
 
     color: #80CDFF;
-
+    font-size: 14px;
     transition: 0.3s;
 
 }

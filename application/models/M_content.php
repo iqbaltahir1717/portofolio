@@ -18,17 +18,16 @@ class M_content extends CI_Model {
     }
 
 
-    public function widget() {
-        $query  = $this->db->query(" SELECT
-            (SELECT count(regulation_id) FROM tbl_web_regulation) as total_regulasi,
-            (SELECT count(news_id) FROM tbl_web_news) as total_berita
-        ");
-        return $query->result();
-    }
+    // public function widget() {
+    //     $query  = $this->db->query(" SELECT
+    //         (SELECT count(regulation_id) FROM tbl_web_regulation) as total_regulasi,
+    //         (SELECT count(news_id) FROM tbl_web_news) as total_berita
+    //     ");
+    //     return $query->result();
+    // }
 
     function __destruct() {
         $this->db->close();
     }
     
 }
-?>

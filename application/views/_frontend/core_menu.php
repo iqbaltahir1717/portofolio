@@ -10,13 +10,12 @@
                 </h5>
                 <nav class="nav-menu d-none d-lg-block">
                     <ul>
-                        <li><a>Project</a></li>
-                        <li><a>Contact</a></li>
+                        <li class="active"><a>Home</a></li>
                         <?php foreach ($news_category as $nc) { ?>
                             <li><a href="<?php echo site_url('page/information/' . $nc->news_category_id . '/1') ?>"><?php echo $nc->news_category_name; ?></a></li>
                         <?php } ?>
                         <a href="https://www.youtube.com/channel/UCJrkNaCzWfKZCx5oFDbQFTw">
-                            <li class="btn-portal" data-aos="fade-left">Freebies Design
+                            <li class="btn-portal" data-aos="fade-left">Freebies
                             </li>
                         </a>
                     </ul>

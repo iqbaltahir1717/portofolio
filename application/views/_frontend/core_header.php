@@ -80,20 +80,16 @@
 	}
 
 	.gumroad-follow-form-embed input {
-		border-radius: 4px;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-		font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size: 15px;
+		border-radius: 0;
+		/* font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+		font-size: 14px;
 		line-height: 20px;
 		background: #fff;
 		border: 1px solid #ddd;
 		border-right: 0;
 		color: #aaa;
-		padding: 10px;
+		padding: 20px;
 		box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02);
-		background-position: top right;
-		background-repeat: no-repeat;
 		text-rendering: optimizeLegibility;
 		font-smoothing: antialiased;
 		-webkit-appearance: none;
@@ -103,20 +99,18 @@
 	}
 
 	.gumroad-follow-form-embed button {
-		border-radius: 4px;
+		border-radius: 0;
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
 		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
 		-webkit-transition: all .05s ease-in-out;
 		transition: all .05s ease-in-out;
-		display: inline-block;
-		padding: 11px 15px 12px;
+		/* display: inline-block; */
 		cursor: pointer;
 		color: #fff;
-		font-size: 15px;
+		font-size: 14px;
 		line-height: 100%;
-		font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		height: 40px !important;
+		height: 41.4px !important;
 		width: 35% !important;
 	}
 </style>

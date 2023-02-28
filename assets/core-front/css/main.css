@@ -7,6 +7,18 @@ body {
   background-color: #272727;
 }
 
+.btn {
+  font-size: 14px !important;
+}
+
+a {
+  color: #A7A7A7;
+}
+
+a:hover {
+  color: #DE90CA;
+}
+
 .bg-1 {
   background: #272727;
   -webkit-box-shadow: inset 0px -48px 96px rgba(255, 255, 255, 0.06), inset 0px 48px 96px rgba(0, 0, 0, 0.25);
@@ -58,14 +70,14 @@ body {
 #header .container .logo a {
   font-size: 16px;
   font-weight: 700;
-  color: #fff;
+  color: #A7A7A7;
   font-family: 'poppins';
 }
 
 #header .container nav ul li a {
   font-weight: 400;
-  font-size: 12px;
-  color: #fff;
+  font-size: 14px;
+  color: #A7A7A7;
 }
 
 #header .container nav ul li a:hover {
@@ -81,7 +93,6 @@ body {
   background: linear-gradient(92.75deg, #E48FCE 7.64%, #E460C2 93.82%);
   -webkit-box-shadow: 0px 35px 38px rgba(216, 0, 158, 0.2);
           box-shadow: 0px 35px 38px rgba(216, 0, 158, 0.2);
-  border-radius: 15px;
   padding: 12px 12px;
 }
 
@@ -109,7 +120,7 @@ body {
 
 #header .container nav ul .btn-portal ul li a {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   text-transform: none;
   color: #4d4d4d;
@@ -152,6 +163,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   z-index: 1;
+  font-size: 14px;
 }
 
 .hero-1 .section-1 {
@@ -177,11 +189,17 @@ body {
 }
 
 .hero-1 .section-1 p {
-  margin-bottom: 40px;
   color: #A7A7A7;
-  font-size: 14px;
   line-height: 189.5%;
   letter-spacing: 0.04em;
+}
+
+.hero-1 .section-1 a {
+  border-bottom: 1px solid #A7A7A7;
+}
+
+.hero-1 .section-1 form {
+  margin-top: 20px;
 }
 
 .hero-1 .section-2 {
@@ -199,6 +217,8 @@ body {
   position: absolute;
   width: calc(200px + 25rem);
   pointer-events: none;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
 }
 
 .grid-card {
@@ -267,6 +287,25 @@ body {
   width: 200px;
 }
 
+.box-content {
+  border: 1px solid #505050;
+  padding: 20px 3rem;
+  font-size: 14px;
+}
+
+.box-content .message-button {
+  margin: 20px 0;
+}
+
+.box-content .message-button p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.box-content .my-5 {
+  border-bottom: 1px solid #A7A7A7;
+}
+
 .entries-2 .entry-3 {
   height: auto;
   border: 1px solid #DADADA;
@@ -290,7 +329,7 @@ body {
 
 .entries-2 .entry-3 .entry-value {
   height: auto;
-  color: #4d4d4d;
+  color: #A7A7A7;
   padding: 20px 40px;
 }
 
@@ -389,6 +428,51 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 10px 5px 0 0;
+}
+
+.card-large {
+  margin-bottom: 4rem;
+}
+
+.card-large .card-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.card-large .card-image img {
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  -webkit-transition: -webkit-filter 0.5s;
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
+}
+
+.card-large .card-button {
+  margin: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-large .card-button .button {
+  margin: 0 20px;
+  color: #A7A7A7;
+  font-size: 14px;
+  border-bottom: 1px solid #A7A7A7;
+}
+
+.card-large .card-button .button:hover {
+  color: #E48FCE;
+}
+
+.card-large:hover img {
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
 }
 
 .container-list {
@@ -530,18 +614,18 @@ body {
 
 .back-title {
   position: absolute;
-  bottom: 260px;
-  font-size: 90px;
+  top: -5rem;
+  font-size: 10rem;
+  right: -10rem;
   font-weight: 600;
-  font-size: 19em;
-  line-height: 449px;
-  /* identical to box height */
   letter-spacing: 0.15em;
-  opacity: 0.1;
+  opacity: 0.05;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: #272727;
 }
 
 .footer-top {
@@ -556,6 +640,10 @@ body {
           box-shadow: inset 0px -12px 24px rgba(255, 255, 255, 0.04), inset 0px 24px 48px rgba(0, 0, 0, 0.25);
 }
 
+.breadcrumbs .container {
+  margin-top: 65px;
+}
+
 .breadcrumbs ol li a {
   color: #A7A7A7;
 }
@@ -566,11 +654,6 @@ body {
 
 .breadcrumbs h2 {
   color: #80CDFF;
-}
-
-.sidebar {
-  padding: 90px;
-  border-radius: 24px;
 }
 
 .center-this {
@@ -590,7 +673,6 @@ body {
   color: #fff;
   padding: 12px 38px;
   background: linear-gradient(92.75deg, #80CDFF 7.64%, #37B0FF 93.82%);
-  border-radius: 15px;
 }
 
 .btn-model-1:hover {
@@ -617,7 +699,6 @@ body {
   border: 1px solid #E48FCE;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 13px;
   padding: 24px 20px;
 }
 
@@ -639,34 +720,27 @@ body {
 
 .input[type=text] {
   color: #4d4d4d;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .btn-model-3 {
+  font-weight: 600;
   color: #fff;
-  font-weight: 500;
-  padding: 12px 24px;
-  background-color: #00D816;
-  -webkit-box-shadow: 0px 35px 38px rgba(0, 216, 22, 0.2);
-          box-shadow: 0px 35px 38px rgba(0, 216, 22, 0.2);
+  padding: 20px 42px;
+  background: #272727;
   border-radius: 15px;
-  display: inline-block;
+  -webkit-box-shadow: -20px -20px 40px rgba(255, 255, 255, 0.06), 20px 20px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: -20px -20px 40px rgba(255, 255, 255, 0.06), 20px 20px 40px rgba(0, 0, 0, 0.25);
 }
 
 .btn-model-4 {
   color: #fff;
-  font-weight: 500;
-  padding: 12px 24px;
-  background-color: #FFCE31;
-  -webkit-box-shadow: 0px 35px 38px rgba(255, 206, 49, 0.2);
-          box-shadow: 0px 35px 38px rgba(255, 206, 49, 0.2);
-  border-radius: 15px;
-  display: inline-block;
+  -webkit-box-shadow: 0px 0px 0px white, 0px 0px 0px black;
+          box-shadow: 0px 0px 0px white, 0px 0px 0px black;
 }
 
 .btn-model-3:hover {
-  color: #4d4d4d;
-  background-color: #FFCE31;
+  color: #fff;
 }
 
 .btn-model-4:hover {
@@ -718,7 +792,7 @@ body {
   font-weight: 600;
 }
 
-@media (max-width: 1201px) {
+@media (max-width: 992px) {
   .container-list .container-list-list-2 {
     max-width: 100%;
     padding: 0 20px;
@@ -746,7 +820,7 @@ body {
   }
   .entry {
     margin: 0 24px;
-    height: 550px;
+    height: 316px;
   }
   .entry .entry-img {
     height: 400px;
@@ -817,7 +891,10 @@ body {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     z-index: 997;
-    padding: 20px 0;
+    padding: 0;
+  }
+  #breadcrumbs .container {
+    margin-top: 0;
   }
 }
 
