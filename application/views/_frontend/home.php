@@ -22,7 +22,7 @@
     <section id="blog" class="blog my-5">
         <div class="container" data-aos="fade-up">
             <div class="back-title second-font">PROJECTS</div>
-            <h4 class="color-1 text-2 weight-600 second-font mb-5">Pinned <span class="color-2">Project</span></h4>
+            <h4 class="color-1 text-2 weight-600 second-font mb-5">Pinned <span class="color-2">Development</span></h4>
             <div class="row">
                 <?php foreach ($news as $n) { ?>
                     <a href="<?php echo site_url('page/information_detail/' . $n->news_category_id . '/' . $n->field_id . '/' . $n->news_slug); ?>">

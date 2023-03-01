@@ -56,6 +56,5 @@
                 </div>
                 <div class="blog-pagination"><?php echo $links; ?></div>
             </div>
-            <br><br><br>
         </section>
     </main>

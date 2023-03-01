@@ -1,10 +1,9 @@
 <section id="breadcrumbs" class="breadcrumbs">
-    <div class="container" style="margin-top:65px">
+    <div class="container">
         <ol>
             <li><a href="<?php echo site_url('home') ?>">Home</a></li>
             <li><a href="#"><?php echo $news_category_name[0]->news_category_name ?></a></li>
         </ol>
-        <h2><?php echo $news[0]->news_title; ?></h2>
     </div>
 </section>
 

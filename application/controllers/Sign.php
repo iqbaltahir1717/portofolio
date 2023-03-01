@@ -96,7 +96,7 @@ class Sign extends CI_Controller
 
 					getAlert($alertStatus, $alertMessage);
 
-					redirect('auth');
+					redirect('sign');
 				}
 			} else {
 
@@ -108,7 +108,7 @@ class Sign extends CI_Controller
 
 				getAlert($alertStatus, $alertMessage);
 
-				redirect('auth');
+				redirect('sign');
 			}
 		}
 	}
