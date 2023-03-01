@@ -326,6 +326,7 @@ a:hover {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
+  border-radius: 0;
 }
 
 .entries-2 .entry-3 .entry-value {
