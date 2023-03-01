@@ -23,7 +23,7 @@
                     if ($news) {
                         foreach ($news as $n) {
                     ?>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6">
                                 <a href="<?php echo site_url('page/information_detail/' . $n->news_category_id . '/' . $n->field_id . '/' . $n->news_slug); ?>">
                                     <article class="entry">
                                         <div class="entry-img">

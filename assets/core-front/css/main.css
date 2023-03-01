@@ -325,6 +325,7 @@ a:hover {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+  width: 100%;
 }
 
 .entries-2 .entry-3 .entry-value {
@@ -428,6 +429,12 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   margin: 10px 5px 0 0;
+}
+
+.card-skill img {
+  width: 80px;
+  height: 80px;
+  margin: 40px;
 }
 
 .card-large {

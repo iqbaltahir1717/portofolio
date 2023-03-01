@@ -45,7 +45,7 @@
 
                                             <div class="read-more" style="text-align-last:center">
 
-                                                <a href="<?php echo $n->link; ?>">Download</a>
+                                                <a href="<?php echo $n->news_link; ?>">Visit Project</a>
 
                                             </div>
 

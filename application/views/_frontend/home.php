@@ -10,7 +10,7 @@
             <p>
                 <?php echo $setting[0]->setting_about; ?>
             </p>
-            <a href=""><i class="icofont-download"></i> &nbsp;Download CV</a>
+            <a href="https://www.figma.com/file/Hjf4UsdIIa03vkVvs4xVu5/curicullum-vitae?node-id=1%3A2" target="_blank"><i class="icofont-download"></i> &nbsp;Download CV</a>
             <form action="https://app.gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post"> <input name="seller_id" type="hidden" value="261502534013"> <input name="email" placeholder="Your email address" type="email"> <button data-custom-highlight-color="" class="btn btn-model-1" type="submit"><i class="icofont-location-arrow"></i>Follow</button> </form>
         </div>
     </section>
@@ -32,7 +32,9 @@
                                     <img width="100%" src="<?php echo base_url(); ?>upload/news/<?php echo $n->news_cover; ?>" alt="image-project">
                                 </div>
                                 <div class="card-button">
-                                    <a class="button" href="<?php echo '#' ?>" target="_blank"><i class="icofont-link"></i> &nbsp;Visit Project</a>
+                                    <?php if (!$n->news_link == '') { ?>
+                                        <a class="button" href="<?php echo $n->news_link ?>" target="_blank"><i class="icofont-link"></i> &nbsp;Visit Project</a>
+                                    <?php } ?>
                                     <a class="button" href="<?php echo site_url('page/information_detail/' . $n->news_category_id . '/' . $n->field_id . '/' . $n->news_slug); ?>"><i class="icofont-book-alt"></i> &nbsp;Study Case</a>
                                 </div>
                             </div>
@@ -43,11 +45,28 @@
                     <div class="d-flex justify-content-between flex-wrap">
                         <div class="message-button">
                             <p class="text-1 text-white">Interested working with me?</p>
-                            <a href="" class="btn btn-model-3">Contact Me</a>
+                            <a href="mailto:iqbaltahir1717@gmail.com" class="btn btn-model-3">Contact Me</a>
                         </div>
                         <div class="center-this">
                             <a href="<?php echo site_url('page/information/2/1') ?>" class="my-5">Other Projects</a>
                         </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5 card-skill">
+                    <h4 class="color-1 text-2 weight-600 second-font mb-5">My <span class="color-2">Tools & Skills</span></h4>
+                    <div class="d-flex justify-content-center align-items-center flex-wrap">
+                        <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png">
+                        <img src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png">
+                        <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png">
+                        <img src="https://aety.io/wp-content/uploads/2016/11/mysql-logo.png">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg">
+                        <img src="https://miro.medium.com/max/320/0*ObJbOfJnx4QIPUq9.png">
+                        <img src="https://assets.stickpng.com/images/62e131df7fe3599fdd46ecb3.png">
                     </div>
                 </div>
             </div>
@@ -56,7 +75,6 @@
 </section>
 
 <!-- blog -->
-
 <section id="blog" class="blog py-5">
     <div class="container py-5" data-aos="fade-up">
         <h4 class="color-1 text-2 weight-600 second-font mb-5">My <span class="color-2">Blog</span></h4>
@@ -84,7 +102,7 @@
             <?php } ?>
             <div class="col-12 mt-5">
                 <div class="center-this">
-                    <a href="<?php echo site_url('page/information/2/1') ?>" class="btn btn-model-2">Other Articles</a>
+                    <a href="<?php echo site_url('page/information/4/1') ?>" class="btn btn-model-2">Other Articles</a>
                 </div>
             </div>
         </div>

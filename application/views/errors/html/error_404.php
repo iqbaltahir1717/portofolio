@@ -64,6 +64,7 @@
     <div class="error-page">
         <h2 class="headline text-red"><i class="fa fa-warning text-red"></i></h2>
         <div class="error-content" style="padding-top:30px">
+            <img width="80px" src="https://thumbs.gfycat.com/AcrobaticUnsungDutchshepherddog-size_restricted.gif" alt="">
             <h3>404</h3>
             <p>Oops! You were not supposed to find a crying whale.</p>
         </div>

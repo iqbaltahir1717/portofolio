@@ -270,6 +270,7 @@ a:hover{
             img {
                 height: auto;
                 object-fit: contain;
+                width: 100%;
             }
         }
         .entry-value {
@@ -360,6 +361,14 @@ a:hover{
         justify-content: center;
         align-items: center;
         margin: 10px 5px 0 0;
+    }
+}
+
+.card-skill{
+    img{
+        width: 80px;
+        height: 80px;
+        margin: 40px;
     }
 }
 

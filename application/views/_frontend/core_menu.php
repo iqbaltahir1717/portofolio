@@ -14,8 +14,8 @@
                         <?php foreach ($news_category as $nc) { ?>
                             <li><a href="<?php echo site_url('page/information/' . $nc->news_category_id . '/1') ?>"><?php echo $nc->news_category_name; ?></a></li>
                         <?php } ?>
-                        <a href="https://www.youtube.com/channel/UCJrkNaCzWfKZCx5oFDbQFTw">
-                            <li class="btn-portal" data-aos="fade-left">Freebies
+                        <a href="https://www.youtube.com/channel/UCOcki7TnvuVzkIA16nY1_2g" target="_blank">
+                            <li class="btn-portal" data-aos="fade-left">Youtube
                             </li>
                         </a>
                     </ul>

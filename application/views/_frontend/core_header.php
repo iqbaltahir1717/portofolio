@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-	<title><?php echo $setting[0]->setting_appname; ?></title>
-
-
-
+	<title><?php echo $setting[0]->setting_appname; ?> <?php if ($this->uri->segment(1) == '') echo '';
+														else echo
+														'| ' . ucfirst($this->uri->segment(1)) ?></title>
 	<meta name="title" content="<?php echo $setting[0]->setting_appname; ?>">
-
 	<meta name="description" content="<?php echo $setting[0]->setting_about; ?>">
-
 	<meta name="keywords" content="website, designer, ui, indonesia, <?php echo $setting[0]->setting_appname; ?>, <?php echo $setting[0]->setting_owner_name; ?>">
 
 	<meta name="robots" content="index, nofollow">

@@ -744,18 +744,13 @@ h6 {
 
 
 .mobile-nav a {
-
     display: block;
-
+    text-align: center;
     position: relative;
-
     color: #ffff;
-
     padding: 20px 20px;
-    /* font-weight: 500; */
     outline: none;
     border-bottom: 1px solid #373737;
-
 }
 
 
