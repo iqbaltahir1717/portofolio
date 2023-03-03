@@ -181,7 +181,7 @@
                             <label for="username">Username</label>
                         </div>
                         <div class="input-field">
-                            <input type="password" name="password" class="input" id="password" required value=" " />
+                            <input type="password" name="password" class="input" id="password" required value="" />
                             <label for="password">Password</label>
                         </div>
                         <div class="input-field">
