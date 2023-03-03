@@ -136,7 +136,7 @@ h6 {
 
     overflow: hidden;
 
-    background: #fff;
+    background: #272727;
 
 }
 
@@ -152,56 +152,59 @@ h6 {
 
     left: calc(50% - 30px);
 
-    border: 6px solid #DE90CA;
-
-    border-top-color: #f8c2eb;
-
-    border-radius: 50%;
-
-    width: 60px;
-
-    height: 60px;
-
-    -webkit-animation: animate-preloader 1s linear infinite;
-
-    animation: animate-preloader 1s linear infinite;
+    width: 55px;
+    display: block;
+    background-color: #03A9F4;
+    height: 55px;
+    -webkit-animation: 3s rotate2 ease-in-out infinite;
+    animation: 3s flip ease-in-out infinite;
 
 }
 
-
-
-@-webkit-keyframes animate-preloader {
-
+@-webkit-keyframes flip {
     0% {
-
-        transform: rotate(0deg);
-
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     }
-
+    25% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+    }
+    50% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    }
+    75% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(-180deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(-180deg);
+    }
     100% {
-
-        transform: rotate(360deg);
-
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(-360deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(-360deg);
     }
-
 }
-
-
-
-@keyframes animate-preloader {
-
+  
+@keyframes flip {
     0% {
-
-        transform: rotate(0deg);
-
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     }
-
+    25% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+    }
+    50% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    }
+    75% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(-180deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(-180deg);
+    }
     100% {
-
-        transform: rotate(360deg);
-
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(-360deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(-360deg);
     }
-
 }
 
 

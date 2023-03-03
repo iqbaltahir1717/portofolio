@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -22,100 +21,44 @@
 
         }
     </style>
-
 </head>
 
 <body class="hold-transition login-page fontPoppins" style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url(<?php echo base_url(); ?>assets/core-images/<?php echo $setting[0]->setting_background; ?>)">
-
     <div class="login-box">
-
-        <div class="login-logo">
-
-            <a href="<?php echo base_url(); ?>"><?php echo $setting[0]->setting_appname; ?></a>
-
-        </div>
-
-
-
         <div class="login-box-body">
-
-
-
             <p class="login-box-msg">Sign in to start your session</p>
-
             <?php
-
             if ($this->session->flashdata('alert')) {
-
                 echo $this->session->flashdata('alert');
             }
-
             ?>
-
             <!-- Start Form Login -->
-
             <?php echo form_open("sign/validate", "class='login-form'"); ?>
-
             <div class="form-group has-feedback">
-
                 <?php echo csrf(); ?>
-
                 <input type="text" class="form-control" placeholder="Username" name="username">
-
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-
             </div>
-
             <div class="form-group has-feedback">
-
                 <input type="password" class="form-control" placeholder="Password" name="password">
-
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-
             </div>
-
             <hr style="border: 0.5px dashed #d2d6de">
-
             <div class="row">
-
                 <div class="col-xs-12">
-
                     <button type="submit" class="btn btn-facebook btn-block btn-flat">Sign In</button>
-
                 </div>
-
             </div>
-
             <?php echo form_close(); ?>
-
             <!-- End Form Login -->
-
-
-
-
-
-
-
             <hr style="border: 0.5px dashed #d2d6de">
-
             <p class="text-center">
-
-                <?php echo $setting[0]->setting_owner_name; ?><br>
-
-                <b>Since @<?php echo date('Y'); ?></b>
-
+                <b>&copy; <?php echo $setting[0]->setting_owner_name; ?> 🔥 2022</b>
             </p>
-
         </div>
-
     </div>
-
-
-
     <script src="<?php echo base_url(); ?>assets/core-admin/core-component/jquery/dist/jquery.min.js"></script>
-
     <script src="<?php echo base_url(); ?>assets/core-admin/core-component/bootstrap/dist/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>

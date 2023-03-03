@@ -2,16 +2,17 @@
             <div class="footer-top" style="background-color: #272727;">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-9 col-md-6 footer-info">
+                        <div class="col-lg-9 col-md-9 footer-info">
                             <h2 class="color-1 weight-600 second-font">Get in touch</h2>
                             <p style="color:#A6A6A6;margin-right:50px"><?php echo $setting[0]->setting_running_text; ?></p>
+                            <p style="margin-top:10px">Total Visit : <?= $setting[0]->setting_kunjungan; ?>x</p>
                             <!-- <div class="social-links mt-3">
                                 <a href="<?php echo $setting[0]->setting_facebook; ?>" class="facebook mr-4 "><i class="bx bxl-facebook"></i></a>
                                 <a href="<?php echo $setting[0]->setting_instagram; ?>" class="instagram mr-4"><i class="bx bxl-instagram"></i></a>
                                 <a href="<?php echo $setting[0]->setting_youtube; ?>" class="youtube"><i class="bx bxl-youtube"></i></a>
                             </div> -->
                         </div>
-                        <div class="col-lg-3 col-md-6 footer-links">
+                        <div class="col-lg-3 col-md-3 footer-links">
                             <h4 class="color-1">Other Pages</h4>
                             <ul>
                                 <?php foreach ($link as $l) { ?>

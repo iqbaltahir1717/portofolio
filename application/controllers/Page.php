@@ -12,12 +12,12 @@ class Page extends CI_Controller
 	}
 
 	// INFORMATION
-	public function information()
+	public function index()
 	{
 		$this->session->unset_userdata('sess_search_information');
 
 		// PAGINATION
-		$baseUrl    = base_url() . "page/information/" . $this->uri->segment(3) . "/" . $this->uri->segment(4) . "/";
+		$baseUrl    = base_url() . "page/index/" . $this->uri->segment(3) . "/" . $this->uri->segment(4) . "/";
 		$totalRows  = count((array) $this->m_news->read('', '', '', $this->uri->segment(3), $this->uri->segment(4)));
 		$perPage    = 10;
 		$uriSegment = 5;

@@ -11,7 +11,7 @@
     <section id="services" class="services">
         <div class="container" data-aos="fade-up">
             <section id="blog" class="blog" style="padding:0">
-                <div class="container" data-aos="fade-up">
+                <div data-aos="fade-up">
                     <div class="row">
                         <div class="col-lg-12 entries-2">
                             <?php foreach ($news as $n) { ?>

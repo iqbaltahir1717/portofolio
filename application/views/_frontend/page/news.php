@@ -36,7 +36,7 @@
                                             </h2>
                                             <div class="entry-meta" style="color:#777777;font-size:12px;">
                                                 <ul>
-                                                    <li class="d-flex align-items-center"> <?php echo indonesiaDate($n->news_date) ?> &nbsp;&nbsp;<i class="icofont-eye-alt"></i> <b><?php echo $n->news_count_view; ?>x dilihat</b></li>
+                                                    <li class="d-flex align-items-center"> <?php echo date('d M Y', strtotime($n->news_date)) ?> &nbsp;&nbsp;<i class="icofont-eye-alt"></i> <b><?php echo $n->news_count_view; ?>x views</b></li>
                                                 </ul>
                                             </div>
                                         </div>

@@ -666,9 +666,19 @@ a:hover{
         }
     }
     .blog {
+        .entry-3{
+            border: none;
+            .entry-value{
+                padding: 20px 0;
+            }
+        }
         div {
             h2 {
-                display: none;
+                // display: none;
+                font-size: 18px;
+            }
+            p{
+                font-size: 14px;
             }
             .carosel {
                 display: none;
@@ -745,7 +755,7 @@ a:hover{
 
 @media (max-width:575px) {
     .container {
-        padding: 10px;
+        padding: 10px 32px;
     }
     .blog-pagination {
         padding: 10px

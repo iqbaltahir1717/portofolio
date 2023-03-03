@@ -4,7 +4,7 @@ class Dashboard extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('m_content');
+
 		// check session data
 		if (!$this->session->userdata('user_id')) {
 			// ALERT
@@ -19,6 +19,7 @@ class Dashboard extends CI_Controller
 	{
 		// DATA
 		$data['setting'] = getSetting();
+		$data['title']   = 'Dashboard';
 		// $data['widget']  = $this->m_content->widget();
 
 		// TEMPLATE
