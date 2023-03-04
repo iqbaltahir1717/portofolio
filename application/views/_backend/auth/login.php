@@ -177,7 +177,7 @@
                         <?php echo form_open("sign/validate", "class='login-form'"); ?>
                         <div class="input-field">
                             <?php echo csrf(); ?>
-                            <input type="text" class="input" name="username" id="username" required autocomplete="off" value=" " />
+                            <input type="text" class="input" name="username" id="username" required autocomplete="off" value="" />
                             <label for="username">Username</label>
                         </div>
                         <div class="input-field">

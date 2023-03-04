@@ -58,7 +58,7 @@
                         </div>
                         <div class="form-group">
                             <label for=""><b style="color: black">Tanggal</b></label>
-                            <input type="date" class="form-control" placeholder="tgl Informasi" name="tanggal_jadwal" value="<?php echo $news[0]->news_date; ?>">
+                            <input type="date" class="form-control" placeholder="tgl Informasi" name="news_date" value="<?php echo $news[0]->news_date; ?>">
                         </div>
                         <div class="form-group">
                             <label for=""><b style="color: black">Cover/Thumbnail Informasi </b></label><br>
