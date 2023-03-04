@@ -34,6 +34,9 @@
                                     <?php if (!$n->news_link == '') { ?>
                                         <a class="button" href="<?php echo $n->news_link ?>" target="_blank"><i class="icofont-link"></i> &nbsp;Visit Project</a>
                                     <?php } ?>
+                                    <?php if (!$n->news_link_2 == '') { ?>
+                                        <a class="button" href="<?php echo $n->news_link_2 ?>" target="_blank"><i class="icofont-android-nexus"></i></i> &nbsp;Playstore</a>
+                                    <?php } ?>
                                     <a class="button" href="<?php echo site_url('page/information_detail/' . $n->news_category_id . '/' . $n->field_id . '/' . $n->news_slug); ?>"><i class="icofont-book-alt"></i> &nbsp;Study Case</a>
                                 </div>
                             </div>

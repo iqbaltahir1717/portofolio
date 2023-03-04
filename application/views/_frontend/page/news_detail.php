@@ -29,11 +29,14 @@
                                     </div>
                                 </article>
                                 <div class="entry-content">
-                                    <?php if (!$n->news_link == '') { ?>
-                                        <div class="read-more">
+                                    <div class="read-more">
+                                        <?php if (!$n->news_link == '') { ?>
                                             <a class="button" href="<?php echo $n->news_link ?>" target="_blank"><i class="icofont-link"></i> &nbsp;Visit Project</a>
-                                        </div>
-                                    <?php } ?>
+                                        <?php } ?>
+                                        <?php if (!$n->news_link_2 == '') { ?>
+                                            <a class="button" href="<?php echo $n->news_link_2 ?>" target="_blank"><i class="icofont-android-nexus"></i></i> &nbsp;Playstore</a>
+                                        <?php } ?>
+                                    </div>
                                 </div>
                             <?php } ?>
                         </div>

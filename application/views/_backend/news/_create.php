@@ -46,8 +46,12 @@
                             <input type="text" class="form-control" placeholder="Judul Informasi" name="news_title" required="required">
                         </div>
                         <div class="form-group">
-                            <label for=""><b style="color: black">Link URL</b></label>
-                            <input type="text" class="form-control" placeholder="Url Informasi" name="news_link">
+                            <label for=""><b style="color: black">Link URL Website</b></label>
+                            <input type="text" class="form-control" placeholder="Url Website" name="news_link">
+                        </div>
+                        <div class="form-group">
+                            <label for=""><b style="color: black">Link URL Android</b></label>
+                            <input type="text" class="form-control" placeholder="Url Android" name="news_link_2">
                         </div>
                         <div class="form-group">
                             <label for=""><b style="color: black">Tanggal</b></label>

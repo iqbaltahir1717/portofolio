@@ -53,8 +53,12 @@
                             <input type="hidden" class="form-control" name="news_cover_old" required="required" value="<?php echo $news[0]->news_cover; ?>">
                         </div>
                         <div class="form-group">
-                            <label for=""><b style="color: black">Link URL </b></label>
+                            <label for=""><b style="color: black">Link URL Website</b></label>
                             <input type="text" class="form-control" placeholder="link Informasi" name="news_link" value="<?php echo $news[0]->news_link; ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for=""><b style="color: black">Link URL Android</b></label>
+                            <input type="text" class="form-control" placeholder="link Informasi" name="news_link_2" value="<?php echo $news[0]->news_link_2; ?>">
                         </div>
                         <div class="form-group">
                             <label for=""><b style="color: black">Tanggal</b></label>

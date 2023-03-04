@@ -204,8 +204,9 @@ class News extends CI_Controller
                 $data['news_slug']        = url_title($data['news_title'], 'dash', true);
                 $data['field_id']         = 1;
                 $data['news_category_id'] = $this->input->post('news_category_id');
-                $data['link'] = $this->input->post('link');
-                $data['tanggal_jadwal'] = $this->input->post('tanggal_jadwal');
+                $data['news_link'] = $this->input->post('news_link');
+                $data['news_link_2'] = $this->input->post('news_link_2');
+                $data['news_date'] = $this->input->post('news_date');
                 $this->m_news->update($data);
 
                 // LOG
@@ -227,6 +228,7 @@ class News extends CI_Controller
             $data['field_id']         = 1;
             $data['news_category_id'] = $this->input->post('news_category_id');
             $data['news_link'] = $this->input->post('news_link');
+            $data['news_link_2'] = $this->input->post('news_link_2');
             $data['news_date'] = $this->input->post('news_date');
             $this->m_news->update($data);
 
