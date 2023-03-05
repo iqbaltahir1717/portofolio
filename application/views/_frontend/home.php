@@ -30,7 +30,7 @@
                                 <div class="card-image">
                                     <img width="100%" src="<?php echo base_url(); ?>upload/news/<?php echo $n->news_cover; ?>" alt="image-project">
                                 </div>
-                                <div class="card-button">
+                                <div class="card-button flex-wrap">
                                     <?php if (!$n->news_link == '') { ?>
                                         <a class="button" href="<?php echo $n->news_link ?>" target="_blank"><i class="icofont-link"></i> &nbsp;Visit Project</a>
                                     <?php } ?>

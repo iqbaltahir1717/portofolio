@@ -154,6 +154,10 @@ class News extends CI_Controller
         $data['news_count_view']  = 0;
         $data['news_slug']        = url_title($data['news_title'], 'dash', true);
         $data['field_id']         = 1;
+        $data['news_link'] = $this->input->post('news_link');
+        $data['news_link_2'] = $this->input->post('news_link_2');
+        $data['news_date'] = $this->input->post('news_date');
+        $data['news_pinned'] = 0;
         $data['news_category_id'] = $this->input->post('news_category_id');
         $data['user_id']          = $this->session->userdata('user_id');
         $data['createtime']       = date('Y-m-d H:i:s');
@@ -207,6 +211,7 @@ class News extends CI_Controller
                 $data['news_link'] = $this->input->post('news_link');
                 $data['news_link_2'] = $this->input->post('news_link_2');
                 $data['news_date'] = $this->input->post('news_date');
+                $data['news_pinned'] = $this->input->post('news_pinned');
                 $this->m_news->update($data);
 
                 // LOG
@@ -230,6 +235,7 @@ class News extends CI_Controller
             $data['news_link'] = $this->input->post('news_link');
             $data['news_link_2'] = $this->input->post('news_link_2');
             $data['news_date'] = $this->input->post('news_date');
+            $data['news_pinned'] = $this->input->post('news_pinned');
             $this->m_news->update($data);
 
             // LOG

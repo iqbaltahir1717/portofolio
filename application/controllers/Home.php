@@ -15,7 +15,7 @@ class Home extends CI_Controller
 	{
 		// DATA
 		$data['setting']             = getSetting();
-		$data['news']                = $this->m_news->read(4, 0, '', 1, '');
+		$data['news']                = $this->m_news->read_pinned();
 		$data['link']                = $this->m_link->read('', '', '');
 		$data['news_category']       = $this->m_news_category->read('', '', '');
 

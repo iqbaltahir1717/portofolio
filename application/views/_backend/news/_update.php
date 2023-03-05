@@ -69,7 +69,21 @@
                             <span class="text-red">file sebelumnya: </span><a href="<?php echo base_url(); ?>upload/news/<?php echo $news[0]->news_cover; ?>"><?php echo $news[0]->news_cover; ?></a>
                             <input type="file" class="form-control" placeholder="Judul Informasi" name="news_cover" accept=".png, .jpeg, .jpg">
                         </div>
-
+                        <?php if ($news[0]->news_category_id == 1) { ?>
+                            <div class="form-group">
+                                <label for=""><b style="color: black">News Pinned</b></label>
+                                <select name="news_pinned" class="form-control">
+                                    <?php
+                                    $choose = ['Unpinned', 'Pinned'];
+                                    for ($i = 0; $i < 2; $i++) {
+                                        if ($i == $news[0]->news_pinned) {
+                                            echo '<option selected value=' . $i . '>' . $choose[$i] . ' </option>';
+                                        } else   echo '<option  value=' . $i . '>' . $choose[$i] . ' </option>';
+                                    }
+                                    ?>
+                                </select>
+                            </div>
+                        <?php } else echo "<input type='hidden'  name='news_pinned' value='0'" ?>
                         <div class="form-group">
                             <label for=""><b style="color: black">Isi Informasi <span style="color:red">*</span></b></label>
                             <textarea cols="80" id="editor" name="news_text" rows="10" style="resize:none;max-width:700px;"><?php echo $news[0]->news_text; ?></textarea>

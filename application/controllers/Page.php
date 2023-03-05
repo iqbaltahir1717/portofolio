@@ -55,7 +55,7 @@ class Page extends CI_Controller
 		// PAGINATION
 		$baseUrl    = base_url() . "page/information_search/" . $this->uri->segment(3) . "/" . $this->uri->segment(4) . "/" . $data['search'] . "/";
 		$totalRows  = count((array)$this->m_news->read('', '', $data['search'], $this->uri->segment(3), $this->uri->segment(4)));
-		$perPage    = 10;
+		$perPage    = 12;
 		$uriSegment = 6;
 		$paging     = generatePaginationBlog($baseUrl, $totalRows, $perPage, $uriSegment);
 		$page       = ($this->uri->segment($uriSegment)) ? $this->uri->segment($uriSegment) : 0;
