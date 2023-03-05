@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     margin: 0;
     padding: 0;
     font-family: 'poppins';
     background-color: #272727;
+}
+
+.glightbox{
+    cursor: pointer !important;
+    transition: all 0.5s;
+}
+.glightbox:hover{
+    opacity: 70%;
 }
 
 .btn{
@@ -259,11 +268,10 @@ a:hover{
 .entries-2 {
     .entry-3 {
         height: auto;
-        border: 1px solid #DADADA;
         box-sizing: border-box;
         // border-radius: 24px;
         padding: 0;
-        margin: 0 4px 20px 0;
+        margin: 30px 0 0 0;
         .entry-img {
             height: auto;
             object-fit: cover;
@@ -275,16 +283,18 @@ a:hover{
             }
         }
         .entry-value {
+            font-family: 'Roboto', sans-serif;
             height: auto;
             color: #A7A7A7;
-            padding: 20px 40px
+            padding: 20px 0;
+            line-height: 1.875;
         }
         
     }
     .entry-content {
         .read-more {
             .button{
-                margin: 0 20px;
+                margin: 0 20px 0 0;
                 color: #A7A7A7;
                 font-size: 14px;
                 border-bottom: 1px solid #A7A7A7 ;
@@ -647,6 +657,14 @@ a:hover{
 .weight-600 {
     font-weight: 600;
 }
+@media (min-width:1200px) {
+    #services{
+        .container{
+            max-width:700px;
+        }
+    }
+}
+
 
 @media (max-width:992px) {
     
@@ -667,7 +685,6 @@ a:hover{
     }
     .blog {
         .entry-3{
-            border: none;
             .entry-value{
                 padding: 20px 0;
             }

@@ -1,10 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   margin: 0;
   padding: 0;
   font-family: 'poppins';
   background-color: #272727;
+}
+
+.glightbox {
+  cursor: pointer !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.glightbox:hover {
+  opacity: 70%;
 }
 
 .btn {
@@ -308,11 +319,10 @@ a:hover {
 
 .entries-2 .entry-3 {
   height: auto;
-  border: 1px solid #DADADA;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
-  margin: 0 4px 20px 0;
+  margin: 30px 0 0 0;
 }
 
 .entries-2 .entry-3 .entry-img {
@@ -330,13 +340,15 @@ a:hover {
 }
 
 .entries-2 .entry-3 .entry-value {
+  font-family: 'Roboto', sans-serif;
   height: auto;
   color: #A7A7A7;
-  padding: 20px 40px;
+  padding: 20px 0;
+  line-height: 1.875;
 }
 
 .entries-2 .entry-content .read-more .button {
-  margin: 0 20px;
+  margin: 0 20px 0 0;
   color: #A7A7A7;
   font-size: 14px;
   border-bottom: 1px solid #A7A7A7;
@@ -795,6 +807,12 @@ a:hover {
   font-weight: 600;
 }
 
+@media (min-width: 1200px) {
+  #services .container {
+    max-width: 700px;
+  }
+}
+
 @media (max-width: 992px) {
   .container-list .container-list-list-2 {
     max-width: 100%;
@@ -814,9 +832,6 @@ a:hover {
   }
   .container-list .container-list-list {
     max-width: 100%;
-  }
-  .blog .entry-3 {
-    border: none;
   }
   .blog .entry-3 .entry-value {
     padding: 20px 0;
